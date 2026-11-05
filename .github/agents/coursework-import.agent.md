@@ -10,7 +10,7 @@ For each assignment batch:
 1. Identify the official course statement and inspect the supplied files.
    Distinguish assignment handouts, code listings, figures, and unrelated
    materials before importing anything.
-2. Keep the work self-contained in the year/course assignment folder. Create a
+2. Keep the work self-contained in the course assignment folder. Create a
    Jupyter notebook with a paraphrased problem outline, model derivation,
    assumptions, Python implementation, actual numerical outputs, figures, and
    candid limitations. Do not rely on local-only source files for explanations.
