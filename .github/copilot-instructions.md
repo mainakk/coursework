@@ -1,28 +1,24 @@
-# Coursework cleanup instructions
+# Coursework editing instructions
 
-When importing another assignment into this repository:
+When importing or revising an assignment:
 
-- Treat the source PDFs/files as authoritative and leave them unchanged.
-- Preserve the original problem-solving approach, equations, constraints,
-  parameter values, solver choices, and distinct historical variants. Do not
-  implement algorithmic improvements during a readability pass.
-- Make cleaned learning material self-contained in the assignment notebook:
-  embed runnable source and store actual runtime output. Keep generated source
-  files temporary.
-- Rename cryptic identifiers when their meaning is clear from the code or
-  source material. Prefer physical meanings such as coordinates, lengths,
-  bounds, objective values, and optimizer results. Retain mathematical symbols
-  when they directly match an equation, and retain names required by MATLAB or
-  Octave callback interfaces.
-- Add only brief comments needed to explain a non-obvious model, packed data
-  layout, callback requirement, or preserved anomaly. Do not annotate obvious
-  statements.
-- Do not silently fix suspicious formulas or constraints. Preserve them and
-  record the concern for review; place proposed alternatives in a separate
-  note or variant.
-- Record every cleanup pass in `CLEANUP-GUIDE.md`: list changed notebook/source
-  cells, identifier renames, comments added, and unresolved concerns. Update
-  the reusable conventions there when the process changes.
-- Re-run the affected notebook code with the documented runtime after edits.
-  Refresh stored outputs, accurately label optimizer failures and
-  non-convergence, and validate notebook JSON and embedded-source completeness.
+- Keep the learning material self-contained. Checked-in notebooks and
+  documentation must explain the model, assumptions, run instructions, and
+  results without referring to prior implementations or unavailable source
+  material.
+- Use the portable Python scientific stack (NumPy, SciPy, Matplotlib) for
+  runnable models. Preserve the problem-solving approach, objective,
+  constraints, parameter values, and meaningful variants; do not substitute
+  a different algorithm for efficiency.
+- Rename cryptic identifiers when their meaning is clear. Add only comments
+  that clarify non-obvious modeling choices or data layouts.
+- Investigate suspected formula or constraint errors. Do not silently change
+  them: record the concern in the private work trace and make a correction only
+  when approved. Keep corrected models and assumptions explicit in the
+  notebook, without relying on historical source material.
+- Keep original inputs outside the repository. Do not publish or push unless
+  explicitly requested.
+- For every pass, record the affected assignment, model decisions, changed
+  assumptions, and unresolved questions in the private work trace.
+- Run all affected notebook cells, refresh saved outputs and figures, and
+  validate notebook JSON before considering the work complete.
