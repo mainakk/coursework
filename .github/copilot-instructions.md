@@ -2,6 +2,8 @@
 
 When importing or revising an assignment:
 
+- For a new coursework batch, follow the step-by-step workflow in
+  `.github/agents/coursework-import.agent.md` and work on one batch at a time.
 - Keep the learning material self-contained. Checked-in notebooks and
   documentation must explain the model, assumptions, run instructions, and
   results without referring to prior implementations or unavailable source
