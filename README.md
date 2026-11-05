@@ -51,3 +51,7 @@ optimization runs do not converge, and both cloth runs fail in Octave; these
 outcomes are reported rather than presented as successful solutions. See each
 assignment README for details, transcription notes, and known issues. MATLAB
 with Optimization Toolbox may behave differently.
+
+Future import and code-cleanup conventions are recorded in
+[`CLEANUP-GUIDE.md`](CLEANUP-GUIDE.md) and
+[`.github/copilot-instructions.md`](.github/copilot-instructions.md).
